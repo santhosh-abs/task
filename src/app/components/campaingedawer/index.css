@@ -1,0 +1,30 @@
+
+.slider{
+  /* height: auto; */
+  width: 100%;
+  background-color: #effaff;
+}
+
+.topdiv{
+  display: flex;
+  align-items: center;
+  height: 64px;
+  background-color: white;
+  padding-left: 30px;
+}
+.p{
+  margin-left: 20px;
+}
+
+.graphContainer{
+  display: flex;
+}
+.table{
+  padding: "30px";
+  margin: "30px";
+}
+.exit-arrow-button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

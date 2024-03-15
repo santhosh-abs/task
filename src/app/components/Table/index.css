@@ -1,0 +1,44 @@
+.product-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.table-filter{
+  display: flex;
+}
+
+.table-filter-search{
+  width: "200px";
+  height: "64px";
+  display: flex;
+  align-items: center;
+
+}
+
+.table-container{
+  margin: 10px;
+}
+
+.table-component{
+  padding: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.pagination-div{
+  /* margin-left: auto; */
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.table-filter-sub{
+  display: flex;
+  align-items: center;
+}
+
+.table-v-eye{
+  display: flex;
+  align-items: center;
+}
