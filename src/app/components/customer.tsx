@@ -1,4 +1,4 @@
-import { Box, Grid, Stack } from '@mui/material';
+import { Box, Grid, Stack, ThemeProvider } from '@mui/material';
 import CustomCard from './card'
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
@@ -11,6 +11,8 @@ import CircularProgress, {
 import Map from './map';
 import CircularProgressWithInner from './CircularProgress'
 import CircularBar from './CircleProgress';
+import React from 'react';
+import { theme } from '../theme';
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
     height: 10,
@@ -58,7 +60,7 @@ function CircularProgressWithLabel(
 }
 function Customer() {
     return (
-        <>
+        <ThemeProvider theme={theme}>
             <Grid container spacing={2} sx={{ paddingRight: '20px' }}>
                 <Grid item xs={2.4}>
                     <CustomCard icon={'src/assets/Icon.png'} backgroundColor='#1C5AA5' text='46' para='Top Channel' data="4% Increase" />
@@ -201,7 +203,7 @@ function Customer() {
                 </Grid>
             </Grid>
 
-        </>
+        </ThemeProvider>
 
     );
 }

@@ -13,9 +13,10 @@ import TabPanel from '@mui/lab/TabPanel'
 import Overview from "../overview";
 import Customer from "../customer";
 import AnchorTemporaryDrawer from "../campaingedawer";
+import { theme } from "../../../theme/theme";
 
 
-const theme = createTheme({
+const theme1 = createTheme({
     components: {
         MuiTableBody: {
             styleOverrides: {
@@ -47,7 +48,7 @@ const TableData = ({ page, rowsPerPage }: any) => {
 
     return (
         <>
-            <ThemeProvider theme={theme}>
+            <ThemeProvider theme={theme1}>
                 <TableBody>
                     {(rowsPerPage > 0
                         ? producttablebody.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
@@ -101,7 +102,8 @@ const TableData = ({ page, rowsPerPage }: any) => {
                         </TableRow>
                     ))}
                 </TableBody>
-            </ThemeProvider >
+            </ThemeProvider>
+            <ThemeProvider theme={theme}>
             <Drawer
                 anchor="right"
                 open={open}
@@ -136,6 +138,7 @@ const TableData = ({ page, rowsPerPage }: any) => {
                 </div>
 
             </Drawer>
+            </ThemeProvider >
         </>
     );
 }
