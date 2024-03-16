@@ -55,16 +55,16 @@ const TableComponent = ({title}: any) => {
     return (
         <ThemeProvider theme={theme}>
             <Card>
-                <div className="product-head">
-                    <h3>{title}</h3>
-                    <div className="filter-field">
+                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 30px 0px'}}>
+                    <h3 style={{fontSize: '20px', color: 'rgba(16, 18, 19, 1)'}}>{title}</h3>
+                    <div style={{display: 'flex', alignItems: 'center', columnGap: '30px'}}>
                         <SearchField holder='Search' />
                         <ButtonComponent icon={<AddLocationOutlinedIcon />}>Location</ButtonComponent>
                         <ButtonComponent icon={<FilterAltOutlinedIcon />}>Filter</ButtonComponent>
                         <ButtonComponent icon={<CalendarMonthOutlinedIcon />}>This Month</ButtonComponent>
                     </div>
                 </div>
-                <div className="table-component">
+                <div style={{padding: '25px'}}>
                     <TableContainer /* component={Paper} */>
                         <Table>
                             <TableHeader />

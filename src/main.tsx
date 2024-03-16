@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from '../src/app/theme'
-// import Routing from '../src/Routes/route';
+import Routing from './routes/route';
 // import App from './App'
 import './index.css'
 import './App.css'
@@ -15,8 +15,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <ThemeProvider theme={theme}>
       {/* <Dashboard /> */}
       {/* <Campaign/> */}
-      <ProductPage/>
-      {/* <Routing /> */}
+      {/* <ProductPage/> */}
+      <Routing />
     </ThemeProvider>
   </React.StrictMode>,
 )

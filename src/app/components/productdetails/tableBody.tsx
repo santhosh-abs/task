@@ -71,6 +71,7 @@ const TableData = ({ page, rowsPerPage }: any) => {
                                         data={[1, 2, 4, 5, 4, 7, 8, 9, 7, 8, 6]}
                                         width={80}
                                         height={50}
+                                        colors={['rgba(169, 195, 112, 1)']}
                                         curve="natural"
                                         area
                                     />
@@ -83,6 +84,7 @@ const TableData = ({ page, rowsPerPage }: any) => {
                                         data={[0, 2, 4, 5, 10, 8, 10, 7, 5, 8, 6,]}
                                         width={80}
                                         height={50}
+                                        colors={['rgba(242, 78, 77, 1)']}
                                         curve="natural"
                                         area
                                     />
@@ -90,7 +92,7 @@ const TableData = ({ page, rowsPerPage }: any) => {
                             </TableCell>
                             <TableCell sx={{ width: '160px' }}><Chip sx={{ color: "#309972", backgroundColor: "#3099723b" }} label={body.acqrate} /></TableCell>
                             <TableCell sx={{ width: '160px' }}><Chip sx={{ color: "#F24E4D", backgroundColor: "#f24e4d4d" }} label={body.churnRate} /></TableCell>
-                            <TableCell>
+                            <TableCell sx={{ width: '160px' }}>
                                 <div style={{ display: 'flex', columnGap: '8px' }}>
                                     <img src='/images/product-indication-icon.svg' alt='icon' />
                                     <img src='/images/view-eye.svg' alt='icon' onClick={() => setOpen(true)} />
