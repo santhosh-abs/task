@@ -119,37 +119,37 @@ export const theme = createTheme({
     MuiTabs: {
       styleOverrides: {
         root: {
-          // "&.MuiTab-root": {
-          //   backgroundColor: "black",
-          //   innerHeight:"40px",
-          //   outerHeight:"40px",
-          //   height:"40px",
-          //   border: 0,
-          //   borderBottom: "2px solid",
-          //   borderRadius:"10px",
-          //   "&:hover": {
-          //     border: 0,
-          //     borderBottom: "2px solid",
-          //   },
-          // },
-          // "&.Mui-selected": {
-          //   backgroundColor: "none",
-          //   borderBottom: "2px solid #373985",
-          //   borderColor: "#373985",
-          // },
+          "&.MuiTab-root": {
+            backgroundColor: "black",
+            innerHeight:"40px",
+            outerHeight:"40px",
+            height:"40px",
+            border: 0,
+            borderBottom: "2px solid",
+            borderRadius:"10px",
+            "&:hover": {
+              border: 0,
+              borderBottom: "2px solid",
+            },
+          },
+          "&.Mui-selected": {
+            backgroundColor: "none",
+            borderBottom: "2px solid #373985",
+            borderColor: "#373985",
+          },
           '& .MuiTabs-indicator': {
             display: 'none', // Hide the indicator
           },
-          // '& .MuiButtonBase-root ':{
-          //   minHeight:"40px",
-          //   minWidth:"auto",
-          //   fontSize:"14px",
-          // },
-          // '& .MuiTabs-flexContainer':{
-          //   borderRadius:"10px",
-          //   border:"solid 1px #D3D3D3",
-          //   overflow:"hidden",
-          // }
+          '& .MuiButtonBase-root ':{
+            minHeight:"40px",
+            minWidth:"auto",
+            fontSize:"14px",
+          },
+          '& .MuiTabs-flexContainer':{
+            borderRadius:"10px",
+            border:"solid 1px #D3D3D3",
+            overflow:"hidden",
+          }
         },
       },
     },

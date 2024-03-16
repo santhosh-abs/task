@@ -1,8 +1,7 @@
+import React from 'react';
 import Box from '@mui/material/Box';
-import CircularProgress, {
-    CircularProgressProps,
-    circularProgressClasses,
-} from '@mui/material/CircularProgress';
+import CircularProgress from '@mui/material/CircularProgress';
+import { Typography } from '@mui/material';
 
 
 
@@ -17,8 +16,8 @@ const CircularBar = ({ value, color, fill, ...props }) => {
                     height: 'auto !important',
                     transform: 'none !important',
                     '& .MuiCircularProgress-svg': {
-                        width: '130px',
-                        height: '130px',
+                        width: '110px',
+                        height: '110px',
                     },
                 }}
                 size={40}
@@ -42,8 +41,8 @@ const CircularBar = ({ value, color, fill, ...props }) => {
                         fill: fill,
                     },
                     '& .MuiCircularProgress-svg': {
-                        width: '130px',
-                        height: '130px',
+                        width: '110px',
+                        height: '110px',
                         strokeLinecap: 'round',
                     },
                 }}
@@ -51,7 +50,25 @@ const CircularBar = ({ value, color, fill, ...props }) => {
                 thickness={3}
                 value={value}
             />
-            <h3 style={{fontWeight:'400',fontSize:'20px',fontFamily:'DM Sans' ,position:'absolute' ,top:'36px' ,right:'46px'}}>{value}%</h3>
+            <Box
+          sx={{
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0,
+            position: 'absolute',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          
+          }}
+        >
+          <Typography
+            variant="caption"
+            component="div"
+            color="text.secondary"
+          >{`${Math.round(100)}%`}</Typography>
+        </Box>
         </Box>
     );
 };
